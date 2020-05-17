@@ -1,0 +1,54 @@
+body {
+  background-image: url('images/base.png');
+}
+.base {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url('images/base.png');
+  width: 100%;
+  max-width: 768px;
+  height: 100vh;
+  margin: auto;
+}
+.container {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.left {
+  width: 75%;
+  padding: 25px;
+}
+.right {
+  width: 25%;
+  height: 100%;
+}
+.image {
+  height: auto;
+  width: 100%;
+}
+.human {
+  width: 25%;
+  position: absolute;
+  right: -80px;
+  bottom: 0;
+}
+.mask {
+  width: 75%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
