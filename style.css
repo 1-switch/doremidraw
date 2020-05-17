@@ -45,7 +45,7 @@ body {
   right: -80px;
   bottom: 0;
 }
-.mask {
+#mask {
   width: 75%;
   height: 100%;
   position: absolute;
