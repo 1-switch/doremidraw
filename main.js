@@ -9,13 +9,21 @@ document.onclick = () => {
 };
 
 let stepAction = () => {
-  let num = Number(document.getElementById('mask').src.substr(-5, 1));
-  if (num == 9) {
+  let mask_num = Number(document.getElementById('mask').src.substr(-5, 1));
+  let image_num = Number(document.getElementById('image').src.substr(-5, 1));
+
+  if (mask_num == 9) {
     document.getElementById('mask').src = `images/mask1.png`;
+    if (image_num == 9) {
+      document.getElementById('image').src = `images/image1.png`;
+    } else {
+      image_num++;
+      document.getElementById('image').src = `images/image${image_num}.png`;
+    }
   } else {
-    music = new Audio(`sounds/sound${num}.wav`);
-    music.play();
-    num++;
-    document.getElementById('mask').src = `images/mask${num}.png`;
+    sound = new Audio(`sounds/sound${mask_num}.wav`);
+    sound.play();
+    mask_num++;
+    document.getElementById('mask').src = `images/mask${mask_num}.png`;
   }
 }
